@@ -106,18 +106,18 @@ _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 2" AND THEN PROCEED TO TH
 
   Which table(s) have foreign key(s)?
 
-    Answer Here:
+    Answer Here: hrs
 
   For this domain, which methods did ActiveRecord create for us and which did we have to create ourselves?
 
-    Answer Here:
+    Answer Here: i created most_calls, active record created the rest(.all, .call, .employee, .manager)
 
   How do you know when you need to use a join table?
 
-    Answer Here:
+    Answer Here: i cannot show how many managers employee has because it belongs to a manager so i need to use join table to have it's class belong to both manager and employee 
 
   What is/are the join table(s) in this application?
 
-    Answer Here:
+    Answer Here: hrs
 
 _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 3" \*\*_
