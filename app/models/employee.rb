@@ -1,8 +1,21 @@
 class Employee < ActiveRecord::Base
     belongs_to :manager
     belongs_to :department
-end
+    has_many :specialists
+  
+      def managers
+        self.manager.all
+      end
 
-def managers
-    self.manager.all
+
+      def specialists
+        self.specialist.all
+      end
+
+      def self.most_calls
+        @@all.maximum(:calls)
+      end
+
+
+
 end
