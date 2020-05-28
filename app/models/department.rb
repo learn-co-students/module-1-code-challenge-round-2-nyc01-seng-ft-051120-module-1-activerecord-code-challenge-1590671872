@@ -1,3 +1,5 @@
 class Department < ActiveRecord::Base
-    has_many :employees
+    has_many :hrs
+    has_many :employees, through: :hrs
+    
 end
