@@ -12,7 +12,7 @@ class Employee < ActiveRecord::Base
     end 
 
     def self.most_calls 
-        #didnt finish
+        Employee.all.max_by{ |employee| employee.calls.count }
     end 
 
 end
