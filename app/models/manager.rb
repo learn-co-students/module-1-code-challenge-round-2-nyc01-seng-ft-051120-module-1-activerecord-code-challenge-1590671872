@@ -1,4 +1,20 @@
 class Manager < ActiveRecord::Base
     has_many :employees
     
-end
+    def name
+        "#{self.name}"
+     end
+
+
+    def employees
+        self.employee.all
+    end
+
+    def self.all
+        @@all
+    end
+
+
+
+end   
+
