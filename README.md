@@ -83,13 +83,13 @@ An Employee:
 
 - has many Specialists
 
-  `Employee#specialists`
-    - Returns all of the employee's specialists
+  <!-- `Employee#specialists`
+    - Returns all of the employee's specialists -->
 
   `Employee.most_calls`
     - Returns the employee with the highest number of calls to Specialists
 
-A Specialist:
+<!-- A Specialist:
 
 - has a name
 - has many Employees
@@ -101,7 +101,7 @@ A Specialist:
     - Returns all of the specialist's employees
 
   `Specialist.all`
-    - Returns all of the specialists
+    - Returns all of the specialists -->
 
 _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 2" AND THEN PROCEED TO THE NEXT DELIVERABLE\*\*_
 
@@ -109,18 +109,18 @@ _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 2" AND THEN PROCEED TO TH
 
   Which table(s) have foreign key(s)?
 
-    Answer Here:
+    Answer Here: the foreign keys are held in the team table (manager_id, employee_id), and the calls table (employee_id, specialist_id)
 
   For this domain, which methods did ActiveRecord create for us and which did we have to create ourselves?
 
-    Answer Here:
+    Answer Here: we had to create the Employee.most_calls method and the rest were given to us from ActiveRecord
 
   How do you know when you need to use a join table?
 
-    Answer Here:
+    Answer Here: Realistically, any time you see a many-to-many relationship, you will need a join table to maintain a single source of truth
 
   What is/are the join table(s) in this application?
 
-    Answer Here:
+    Answer Here: The join tables in this application are the Teams table and the Calls table.
 
 _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 3" \*\*_
