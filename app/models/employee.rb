@@ -6,7 +6,7 @@ class Employee < ActiveRecord::Base
     belongs_to :department
 
     
-    def self.most_calls 
+   def self.most_calls #this pulls an error, im coming back to it to address the readme short answers
       array =  Employee.all.map do |employee|
         employee.calls.count
        end

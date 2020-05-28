@@ -106,18 +106,32 @@ _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 2" AND THEN PROCEED TO TH
 
   Which table(s) have foreign key(s)?
 
-    Answer Here:
+    Answer Here: 
+    The table 'branchs' has two foreign keys of manager_id and employee_id and acts as a join table for the Managers and Employees tables.
+    The table 'calls' has two foreign keys of specialist_id and employee_id, making it a join table for Specialist and Employee
+    The table employees still has the foreign key corresponding to department_id which allows an employee to belong to a department, and a department to have many employees. 
+
 
   For this domain, which methods did ActiveRecord create for us and which did we have to create ourselves?
 
-    Answer Here:
+    Answer Here: Active Record created the 
+    employee.name (inst)
+    employee.specialists(inst)
+    manager.employees(inst)
+    employee.managers(inst)
+    specialist.employees(inst)
+    Specialist.all (class)
+    specialist.name (inst)
+    ...
+
+    the only method we really had to create for ourself is Employee.most_calls
 
   How do you know when you need to use a join table?
 
-    Answer Here:
+    Answer Here: When there is a many to many relationship
 
   What is/are the join table(s) in this application?
 
-    Answer Here:
+    Answer Here: the join tables are the branchs table and the calls table.
 
 _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 3" \*\*_
